@@ -8,6 +8,8 @@ import Index from "./pages/Index";
 import TourPage from "./pages/TourPage";
 import NotFound from "./pages/NotFound";
 import Layout from "./components/Layout/Layout";
+import ExploreTours from "./pages/ExploreTours";
+import About from "./pages/About";
 
 const queryClient = new QueryClient();
 
