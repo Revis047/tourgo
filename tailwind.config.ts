@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				vr: {
+					dark: '#1A1F2C',
+					primary: '#8B5CF6',
+					secondary: '#7E69AB',
+					light: '#D6BCFA',
+					accent: '#0EA5E9'
 				}
 			},
 			borderRadius: {
@@ -70,25 +78,41 @@ export default {
 			},
 			keyframes: {
 				'accordion-down': {
-					from: {
-						height: '0'
-					},
-					to: {
-						height: 'var(--radix-accordion-content-height)'
-					}
+					from: { height: '0' },
+					to: { height: 'var(--radix-accordion-content-height)' }
 				},
 				'accordion-up': {
-					from: {
-						height: 'var(--radix-accordion-content-height)'
-					},
-					to: {
-						height: '0'
-					}
+					from: { height: 'var(--radix-accordion-content-height)' },
+					to: { height: '0' }
+				},
+				'fade-in': {
+					'0%': { opacity: '0', transform: 'translateY(10px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' }
+				},
+				'fade-out': {
+					'0%': { opacity: '1', transform: 'translateY(0)' },
+					'100%': { opacity: '0', transform: 'translateY(10px)' }
+				},
+				'pulse-light': {
+					'0%, 100%': { opacity: '0.6' },
+					'50%': { opacity: '1' }
+				},
+				'rotate-slow': {
+					'0%': { transform: 'rotate(0deg)' },
+					'100%': { transform: 'rotate(360deg)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.5s ease-out',
+				'fade-out': 'fade-out 0.5s ease-out',
+				'pulse-light': 'pulse-light 2s ease-in-out infinite',
+				'rotate-slow': 'rotate-slow 10s linear infinite'
+			},
+			backgroundImage: {
+				'gradient-vr': 'linear-gradient(to bottom right, #1A1F2C, #372F55)',
+				'gradient-card': 'linear-gradient(to bottom, rgba(26, 31, 44, 0.8), rgba(26, 31, 44, 0.6))'
 			}
 		}
 	},
