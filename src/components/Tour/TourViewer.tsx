@@ -1,7 +1,7 @@
 
 import { useState, useRef, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { ArrowLeft, ZoomIn, ZoomOut, RotateRight } from 'lucide-react';
+import { ArrowLeft, ZoomIn, ZoomOut, RotateCw } from 'lucide-react';
 
 import { getTourById } from '@/lib/tourData';
 import useVRControls from '@/hooks/useVRControls';
@@ -134,7 +134,7 @@ const TourViewer = () => {
           onClick={resetView}
           className="bg-vr-primary/80 hover:bg-vr-primary p-2 rounded-full text-white"
         >
-          <RotateRight size={18} />
+          <RotateCw size={18} />
         </button>
       </div>
       
