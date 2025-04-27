@@ -1,7 +1,7 @@
 
 import { Link } from "react-router-dom";
 import { TourType } from "@/lib/constants";
-import { Vr } from "lucide-react";
+import { Eye } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface FeaturedTourProps {
@@ -27,7 +27,7 @@ const FeaturedTour = ({ tour }: FeaturedTourProps) => {
         <div className="container mx-auto px-4 pb-16">
           <div className="max-w-2xl">
             <div className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-vr-primary/20 text-vr-primary mb-4">
-              <Vr className="mr-2 h-4 w-4" />
+              <Eye className="mr-2 h-4 w-4" />
               Featured Experience
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">{name}</h2>

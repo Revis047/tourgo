@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { Vr } from "lucide-react";
+import { Eye } from "lucide-react";
 import { APP_NAME } from "@/lib/constants";
 
 const Navbar = () => {
@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center space-x-2">
-            <Vr className="w-6 h-6 text-vr-primary" />
+            <Eye className="w-6 h-6 text-vr-primary" />
             <span className="font-bold text-xl">{APP_NAME}</span>
           </Link>
           

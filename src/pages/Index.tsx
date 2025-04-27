@@ -4,7 +4,7 @@ import FeaturedTour from "@/components/Home/FeaturedTour";
 import TourCard from "@/components/Home/TourCard";
 import { TOURS, getFeaturedTours } from "@/lib/tourData";
 import { APP_NAME, APP_DESCRIPTION } from "@/lib/constants";
-import { Navigation } from "lucide-react";
+import { Eye } from "lucide-react";
 
 const Index = () => {
   const featuredTours = getFeaturedTours();
@@ -24,7 +24,7 @@ const Index = () => {
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto">
             <div className="flex items-center justify-center mb-6">
-              <Navigation className="h-10 w-10 text-vr-primary mr-3 animate-pulse-light" />
+              <Eye className="h-10 w-10 text-vr-primary mr-3 animate-pulse-light" />
               <h1 className="text-4xl font-bold">{APP_NAME}</h1>
             </div>
             <p className="text-xl mb-8 text-gray-200">
