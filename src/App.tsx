@@ -20,6 +20,8 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Layout><Index /></Layout>} />
           <Route path="/tour/:tourId/:sceneId" element={<TourPage />} />
+          <Route path="/explore" element={<Layout><ExploreTours /></Layout>} />
+          <Route path="/about" element={<Layout><About /></Layout>} />
           <Route path="*" element={<Layout><NotFound /></Layout>} />
         </Routes>
       </BrowserRouter>

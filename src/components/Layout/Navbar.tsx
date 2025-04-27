@@ -17,7 +17,7 @@ const Navbar = () => {
             <Link to="/" className="hover:text-vr-primary transition-colors">
               Home
             </Link>
-            <Link to="/tours" className="hover:text-vr-primary transition-colors">
+            <Link to="/explore" className="hover:text-vr-primary transition-colors">
               Explore Tours
             </Link>
             <Link to="/about" className="hover:text-vr-primary transition-colors">
